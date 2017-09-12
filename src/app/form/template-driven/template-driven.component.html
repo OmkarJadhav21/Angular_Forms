@@ -10,6 +10,7 @@
               placeholder="User Name" 
               class="txt"
               name="usNm"
+              required=""
               [(ngModel)]="frmData.usNm">
 
             <input 
@@ -17,6 +18,7 @@
               placeholder="Email" 
               class="txt"
               name="eml"
+              required=""
               [(ngModel)]="frmData.eml">
 
             <input 
@@ -24,13 +26,15 @@
               placeholder="Password" 
               class="txt"
               name="pass"
+              required=""
               [(ngModel)]="frmData.pass">
 
             <input 
-              type="submit" 
-              value="submit" 
+              type="Submit" 
+              value="Submit" 
               name="submit" 
               class="btn btn-info"
+              [disabled]="!myFrm.valid"
               >
           </form>
         </div>

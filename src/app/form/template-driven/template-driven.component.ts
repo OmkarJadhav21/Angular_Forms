@@ -18,6 +18,8 @@ frmData={
   }
   onSubmit(myFrm?:NgForm){
 // console.log(myFrm.form.value);       //first way to read data of form at console
-console.log(this.frmData);           //Second way to read data of form at console
+// console.log(this.frmData);           //Second way to read data of form at console
+console.log(myFrm.form);
+
   }
 }
