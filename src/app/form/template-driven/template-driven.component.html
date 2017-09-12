@@ -4,33 +4,34 @@
       <div class="form_main">
         <h4 class="heading"><strong>Quick </strong> Contact <span></span></h4>
         <div class="form">
-           <form > 
+           <form (ngSubmit)="onSubmit(myFrm)" #myFrm="ngForm" > 
             <input 
               type="text" 
               placeholder="User Name" 
               class="txt"
               name="usNm"
-              >
+              ngModel>
 
             <input 
               type="text" 
               placeholder="Email" 
               class="txt"
               name="eml"
-              required>
+              ngModel>
 
             <input 
               type="text" 
               placeholder="Password" 
               class="txt"
               name="pass"
-              required>
+              ngModel>
 
             <input 
               type="submit" 
               value="submit" 
               name="submit" 
-              class="btn btn-info">
+              class="btn btn-info"
+              >
           </form>
         </div>
       </div>
