@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="form_main">
+        <h4 class="heading"><strong>Quick </strong> Contact <span></span></h4>
+        <div class="form">
+           <form [formGroup]="myform" novalidate (ngSubmit)="dataSubmit()"> 
+            <input 
+              type="text" 
+              placeholder="User Name" 
+              class="txt"
+              formControlName="user"
+             >
+
+            <input 
+              type="text" 
+              placeholder="Email" 
+              class="txt"
+              formControlName="email"
+              >
+
+            <input 
+              type="text" 
+              placeholder="Password" 
+              class="txt" 
+              formControlName="pass"
+              >
+
+            <input 
+              type="Submit" 
+              value="Submit" 
+              class="btn btn-info">      
+              </form>
+        </div>
+      </div>
+    </div> 
+  </div>
