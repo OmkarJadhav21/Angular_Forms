@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { TemplateDrivenComponent } from './form/template-driven/template-driven.component';
 import { DataDrivenComponent } from './form/data-driven/data-driven.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
     TemplateDrivenComponent,
-    DataDrivenComponent
+    DataDrivenComponent,
+    PipeComponent
   ],
   imports: [
     BrowserModule,
