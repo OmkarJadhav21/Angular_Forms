@@ -10,6 +10,7 @@ import { TemplateDrivenComponent } from './form/template-driven/template-driven.
 import { DataDrivenComponent } from './form/data-driven/data-driven.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { AsciiPipePipe } from './pipe/ascii-pipe.pipe';
+import { FilterPipe } from './pipe/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AsciiPipePipe } from './pipe/ascii-pipe.pipe';
     TemplateDrivenComponent,
     DataDrivenComponent,
     PipeComponent,
-    AsciiPipePipe
+    AsciiPipePipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
