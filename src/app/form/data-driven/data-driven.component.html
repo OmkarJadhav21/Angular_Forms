@@ -2,36 +2,40 @@
   <div class="row">
     <div class="col-md-4">
       <div class="form_main">
-        <h4 class="heading"><strong>Quick </strong> Contact <span></span></h4>
+        <h4 class="heading">Data Driven Form <span></span></h4>
         <div class="form">
            <form [formGroup]="myform" novalidate (ngSubmit)="dataSubmit()"> 
             <input 
               type="text" 
               placeholder="User Name" 
               class="txt"
-              formControlName="user"
-             >
+              formControlName="user">
+             <span style="color:red;font-size:15px;font-family:fantasy" *ngIf="!myform.controls.user.valid">Enter Username</span>
 
             <input 
               type="text" 
               placeholder="Email" 
               class="txt"
-              formControlName="email"
-              >
+              formControlName="email">
+              <span style="color:red;font-size:15px;font-family:fantasy" *ngIf="!myform.controls.email.valid" >Enter Email</span>
+              
 
             <input 
               type="text" 
               placeholder="Password" 
               class="txt" 
-              formControlName="pass"
-              >
+              formControlName="pass">
+              <span style="color:red;font-size:15px;font-family:fantasy" *ngIf="!myform.controls.pass.valid" >Min 8 characters required</span>
+              
 
             <input 
               type="Submit" 
-              value="Submit" 
-              class="btn btn-info">      
+              value="Submit"
+              name="submit"  
+              class="btn btn-info"
+              [disabled]="!myform.valid">      
               </form>
         </div>
       </div>
     </div> 
-  </div>
+  </div>  
