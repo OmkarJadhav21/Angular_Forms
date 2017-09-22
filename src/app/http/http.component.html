@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Http</h1>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <input type="text" #city>
+      <input type="button" value="Okay" class="btn btn-primary" (click)="onWeather(city.value)">
+    </div>
+  </div>
+
+  <div class="jumbotron">
+    <div class="col-md-12">
+      <h3>Rain - {{rainTxt}}</h3>
+    </div>
+  </div>
+</div>
