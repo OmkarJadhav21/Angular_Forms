@@ -20,6 +20,10 @@ private Mobiles=[
   'Sony'
 ];
 
+private prom:Promise<String>=new Promise<String>(
+  (res,rej)=>setTimeout(()=>res(`Yes,,,Got it!!!`),2000)
+)
+
   constructor() { }
 
   ngOnInit() {
